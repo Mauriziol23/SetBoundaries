@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
-<title>Hansen Home Inspections</title>
+<title>Set Boundaries</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="style.css">
-<link rel="shortcut icon" type="image/png" href="assets/idealc.png">
+<link rel="shortcut icon" type="image/png" href="assets/cog.png">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
@@ -127,28 +127,30 @@ map stuff */
 <body>
 
     <!-- Navbar (sit on top) -->
-    <div class="w3-top">
-        <div class="w3-bar w3-aqua w3-card" id="myNavbar">
+    <div class="w3-top" style="background-color: black;
+    color: white;">
+        <div class="w3-bar w3-black w3-card" id="myNavbar">
             <a href="#home" class="w3-bar-item w3-button w3-wide" style="padding-left: 5px;
             padding-top: 5px;
             padding-bottom: 0px;
-            padding-right: 5px;
-            background-color: #022048;">
-                <img class="w3-image w3-round-small" type="image/jpg" src="assets/idealc.png" alt="Logo" width="50" height="25">
+            padding-right: 5px;">
+                <img class="w3-image w3-round-small" type="image/jpg" src="assets/cog.png" alt="Logo" width="50" height="25">
             </a>
             <!-- Right-sided navbar links -->
-            <div class="w3-right w3-hide-small w3-text-white w3-bold">
+            <div class="w3-right w3-hide-small w3-bold" style = "background-color: black;
+            color: white;">
                 <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+                <a href="#industry" class="w3-bar-item w3-button"> INDUSTRIES</a>
                 <a href="#service" class="w3-bar-item w3-button">SERVICES</a>
-                <a href="#review" class="w3-bar-item w3-button"> REVIEWS</a>
-                <a href="#pricing" class="w3-bar-item w3-button"> PRICING</a>
-                <a href="#area" class="w3-bar-item w3-button"> AREAS</a>
+                <!-- <a href="#industries" class="w3-bar-item w3-button"> INDUSTRIES</a> -->
+               
+                <a href="#client" class="w3-bar-item w3-button"> CLIENTS</a>
                 <a href="#contact" class="w3-bar-item w3-button"> CONTACT</a>
             </div>
             <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
             <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
-                <i class="fa fa-bars"></i>
+                <i class="fa fa-bars" style = "color: white;"></i>
             </a>
         </div>
     </div>
@@ -157,28 +159,35 @@ map stuff */
     <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
         <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
         <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+        <a href="#industry" onclick="w3_close()" class="w3-bar-item w3-button">INDUSTRIES</a>
         <a href="#service" onclick="w3_close()" class="w3-bar-item w3-button">SERVICES</a>
-        <a href="#review" onclick="w3_close()" class="w3-bar-item w3-button">REVIEWS</a>
-        <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>
-        <a href="#area" onclick="w3_close()" class="w3-bar-item w3-button">AREAS</a>
+        <!-- <a href="#review" onclick="w3_close()" class="w3-bar-item w3-button">REVIEWS</a> -->
+     
+        <a href="#client" onclick="w3_close()" class="w3-bar-item w3-button">CLIENTS</a>
         <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
     </nav>
 
     <!-- Header with full-height image -->
     <header class="bgimg-1 w3-display-container" id="home">
-        <div class="w3-display-left" style="padding:48px">
+        <div style="padding-top: 400px;">
             <br>
             <br>
           
-            <span class="w3-jumbo w3-hide-small w3-text-white" style="padding-top:20px;">Hansen Home Inspections</span>
+            <!-- <span class="w3-jumbo w3-hide-small w3-text-white" style="padding-top:20px;">Hansen Home Inspections</span>
             <br>
             <span class="w3-xxlarge w3-hide-large w3-hide-medium  w3-text-white">Hansen Home Inspections</span>
-            <br>
+            <br> -->
 
             <!-- take this out -->
             <!-- <span class="w3-xlarge w3-text-white">Excellence in every aspect of our business.</span>
             <p> -->
-                <a href="#contact" class="w3-button w3-white w3-padding-medium w3-medium w3-margin-top">Set up your appointment today</a>
+                <br>
+                <br>
+                <br>
+                <div class=w3-center>
+                <a href="#contact" class="w3-button w3-sb-blue w3-center w3-medium">Let us help you, get there</a>
+                </div>
+               
             </p>
         </div>
 
@@ -188,333 +197,149 @@ map stuff */
     <div class="w3-container" style="padding:128px 16px" id="about">
         <h2 class="w3-center">ABOUT US</h2>
         <div class="w3-center">
-        <img class="circle-image" src="assets/idealc.png">
+        <img class="circle-image"style=" width: 15% !important;
+        " src="assets/cog.png">
     </div>
-        <p class="w3-center w3-large">I'm Chris Hansen, and Hansen Home Inspections, PLLC is my company. 
-            <br> 
-            When you set an appointment with Hansen Home Inspections, I'm the one who inspects your home...a Professional Inspector licensed by the Texas Real Estate Commission (#23601).
-        <br>
-         I typically schedule one inspection a day so that I can spend as much time as necessary with my clients and the house to insure a quality inspection. I issue a written, full color report with pictures the same day. I never try to upsell my clients for services or items that they don't want or need, and I don't take money for selling third-party services. 
-         <br>
-         If you want a thorough Home Inspection at a fair price, contact me today!</p>
+        <p class="w3-center w3-xlarge"><i>We are a local program management consulting company, that you cant trust </i></p> 
+            <br>
+            <p class="w3-center w3-large" style="padding-left: 35px;
+            padding-right: 35px;">
+
+            Set Boundaries was founded to provide project or program management consulting services to clients, facilitating use of state-of-the-art valued added project management tools that strengthen predictability and overall execution success. 
+            
+            <br>
+            <br>
+            We empower our client teams to effectively manage projects through training and mentoring.
+        </p> 
           
     </div>
+
+    <!-- Promo Section - "We know design" -->
+<div class="w3-container w3-dark-grey" style="padding:128px 16px">
+    <div class="w3-row-padding">
+      <div class="w3-col m6" style="padding-left: 35px;
+      padding-right: 35px;">
+        <p class =" w3-xlarge">We can help you get there</p>        <p>We are a trusted partner, our commitment to customer success is focused on helping you achieve your project and business goals into the future.  </p>
+      
+      </div>
+      <div class="w3-col m6" style="padding-left: 35px;
+      padding-right: 35px;">
+        <img class="w3-image w3-round-large" src="assets/qualifications.PNG" alt="Buildings" width="700" height="394">
+      </div>
+    </div>
+  </div>
+
+
+
+<!-- Industry section -->
+  <div class="w3-container" style="padding:128px 16px" id="industry">
+    <h2 class="w3-center">INDUSTRY EXPERIENCE</h2>
+    <div class="w3-center">
+        <p class="w3-center w3-xlarge">Provinding Success across many Industries </p> 
+        <br>
+        <img class="w3-image w3-round-large"
+        " src="assets/industries.PNG">
+</div>
+  
+      
+</div>
 
     <!-- Main Service Section  -->
     <div class="w3-container w3-light-grey" style="padding:128px 16px" id="service">
             <h2 class="w3-center ">SERVICES</h2>
-            <p class="w3-large w3-center">What's included in your inspection?</p>
+            <p class="w3-large w3-center">Program management consulting services offered</p>
         <div class="w3-row-padding w3-center" style="margin-top:32px">
             <div class="w3-quarter">
-                <i class="fa fa-institution w3-margin-bottom w3-jumbo w3-center"></i>
-                <p class="w3-large">Structural</p>
-                <p>Foundation, Grading and Drainage, Roof Structure; Attic &amp; Crawlspace (where accessible), Walls, Ceilings
-                    &amp; Floors, Doors, Windows, Stairways, Fireplace and Chimney, Porches, Balconies, Decks &amp; Carports.</p>
+                <i class="fa fa-heartbeat		
+                w3-margin-bottom w3-jumbo w3-center"></i>
+                <p class="w3-large">Project Risk Assessment</p>
+               
+                <p>Maximize the probability and consequences of positive events to project outcomes and minimize the probability and consequences of negative events to project outcomes. Guidance on better predicting residual risks and the ripple effect of a project decision.
+                </p>
             </div>
             <div class="w3-quarter">
-                <i class="fa fa-bolt w3-margin-bottom w3-jumbo"></i>
-                <p class="w3-large">Electrical Sytem</p>
-                <p>Service Entrance, Panels, Branch Circuits, Connected Devices &amp; Fixtures.</p>
+                <i class="fa fa-hourglass-1	
+                w3-margin-bottom w3-jumbo"></i>
+                <p class="w3-large">Project Planning and Launch</p>
+                
+               
+                <p>Outline a game plan that will address the monitoring, tracking and controlling of the project once it gets under way.</p>
             </div>
             <div class="w3-quarter">
-                <i class="fa fa-fire w3-margin-bottom w3-jumbo"></i>
-                <p class="w3-large">Heating & Cooling</p>
-                <p>Heating &amp; Cooling Equipment(weather permitting for some AC systems), Duct System, Chases &amp; Vents.</p>
+                <i class="fa fa-play	
+                w3-margin-bottom w3-jumbo"></i>
+                <p class="w3-large">Project Execution</p>
+                <p>performing the project scope of works and activities in accordance with the project baselines, plans and procedures with the resource, interface, change, schedule, cost, risk, quality, safety and environment management, contractual requirements, and regulation.</p>
             </div>
             <div class="w3-quarter">
-                <i class="fa fa-bathtub w3-margin-bottom w3-jumbo"></i>
-                <p class="w3-large">Plumbing Systems</p>
-                <p>Plumbing Supply, Distribution Systems &amp; Fixtures, Drains, Wastes, and Vents, Water Heating Equipment,
-                    Hydro-Massage Therapy Equipment.</p>
+                <i class="fa fa-binoculars	
+                w3-margin-bottom w3-jumbo"></i>
+                <p class="w3-large">Project Monitoring and Control</p>
+                <p>Ensure project work is carried out according to the plan and provide guidance on any items necessary to ensure the project goes according to plan.</p>
             </div>
         </div>
+
+        <div class="w3-row-padding w3-center" style="margin-top:32px">
+            <div class="w3-quarter">
+                <i class="fa fa-bullhorn	
+                w3-margin-bottom w3-jumbo w3-center"></i>
+                <p class="w3-large">Change Management</p>
+
+                <p>Identify ways to strategically plan for change, functions of critical roles that should be incorporated into plans, recognize how culture can affect change, and plan activities to increase the likelihood of success.
+                </p>
+            </div>
+            <div class="w3-quarter">
+                <i class="fa fa-check	
+                w3-margin-bottom w3-jumbo"></i>
+                <p class="w3-large">Project Closure
+                </p>
+                <p>The never-ending project - Assurance that all the work has been completed, that all agreed upon project management processes have been executed, and formal recognition of the completion of a project—everyone agrees that it is completed.</p>
+            </div>
+            <div class="w3-quarter">
+                <i class="fa fa-handshake-o	
+                w3-margin-bottom w3-jumbo"></i>
+                <p class="w3-large">Team Building/ Mentoring
+                </p>
+                <p>Work with individual contributors to build a strong foundation for effective interpersonal communication. Facilitate the behavioral and communication dynamics essential to a team's collaboration.</p>
+            </div>
+            <div class="w3-quarter">
+                <i class="fa fa-pause	
+                w3-margin-bottom w3-jumbo"></i>
+                <p class="w3-large">Mid-Project Audit</p>
+                <p>Evaluate existing project plans and project progress reports to identify problem areas and to determine appropriate strategies to refocus, remove roadblocks, and motivate the team with a clear sense of direction..</p>
+            </div>
+        </div>
+
+
+
         <div class="w3-center" style="margin-top:64px">
-            <div class="w3-third">
-                <i class="fa fa-plug w3-margin-bottom w3-jumbo"></i>
-                <p class="w3-large">Appliances</p>
-                <p>Dishwasher(s), Garbage Disposal, Range Hood &amp; Exhaust, Stove, Oven &amp; Cooktop, Microwave, Bathroom
-                    Vents &amp; Heaters, Garage Door Opener, Dryer Venting.</p>
+            <div class="w3-half">
+                <i class="fa fa-close	
+                w3-margin-bottom w3-jumbo"></i>
+                <p class="w3-large">Problem Intervention
+                </p>
+                <p>The project is in trouble - Analyze a current problem situation to determine its cause and related impact to devise appropriate corrective actions.
+                </p>
             </div>
-            <div class="w3-third">
+            <div class="w3-half">
                 <i class="fa fa-handshake-o w3-margin-bottom w3-jumbo"></i>
-                <p class="w3-large">Optional Systems</p>
-                <p>Wood Destroying Insect Report (WDI), Sprinklers, Outbuildings, Pools, Hot Tubs, Spas, Wells, and Septic Systems.</p>
+                <p class="w3-large">Post-Project Evaluation
+                </p>
+                <p>Benefit from your teams experience - Review and evaluate a recently completed project so that lessons learned can be identified as a growth experience for the project team and documented for use by future teams.</p>
             </div>
-            <div class="w3-third">
-                <i class="fa fa-home w3-margin-bottom w3-jumbo"></i>
-                <p class="w3-large">Types of Structures</p>
-                <p>Single Family Homes; Multi-Family Homes (up to 4 units); Condominiums, Apartment Rentals.</p>
-            </div>
+          
         </div>
     </div>
 
-    <!-- Review Section -->
-    <div class="w3-container" style="padding:128px 16px" id="review">
-        <h2 class="w3-center">REVIEWS</h2>
-
-        <p class="w3-large w3-center">Don't just take our word, hear it from our customers!</p>
-        <div class="w3-center">
-        
-            <a href="http://www.homeadvisor.com/rated.HansenHomeInspections.86915009.html" <img  title="HomeAdvisor Best" target="_blank">
-                <img class="small-circle-image" src="assets/best2020.png"></a>
-            <a href="https://www.homeadvisor.com/rated.HansenHomeInspections.86915009.html" title="HomeAdvisor" target="_blank">
-                <img class="small-circle-image" src="assets/homeadvisor.png">
-            </a>
-            <a href="http://www.homeadvisor.com/c.Home-Inspection.Austin.TX.-12041.html#spid=86915009"><img class="small-circle-image" alt="Hansen Home Inspections, PLLC - HomeAdvisor Elite Service" src="http://www.homeadvisor.com/images/sp-badges/elite-solid-border.png?sp=86915009&key=0ccb5c94ecfc9be08f1f6491ef734fc8" /></a>
-
-            
-            <!-- https://www.homeadvisor.com/rated.HansenHomeInspections.86915009.html -->
-        </div>
-        <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
-        <div class="w3-main" style="margin-left:250px; cursor: pointer;" onclick="window.location='https://www.homeadvisor.com/rated.HansenHomeInspections.86915009.html';">
-
-                <div class="w3-half w3-container">
-                        <img src="assets/5starflat.png" style="width:30%">
-        
-                        <h4 class="w3-text-teal">Review by Gerard C. in Austin TX</h4>
-                        <h4 class="w3-text-teal">Project: Inspected a home</h4>
-                        <p>Mr. Hansen was very thorough, professional, and knowledgeable during his inspection of my new home. I really
-                            respect the fact that he was very patient with himself paying attention to every little detail. Thanks
-                            for your assistance Chris .</p>
-                    </div>
-
-
-
-            <div class="w3-half w3-container">
-                <img src="assets/5starflat.png" style="width:30%">
-
-                <h4 class="w3-text-teal">Review by Antornisha D. in Pflugerville, TX</h4>
-                <h4 class="w3-text-teal">Project: Inspect a Home</h4>
-                <p>Chris was amazing! He showed up on time and made sure to explain everything to me in great detail. I will
-                    be hiring him for my next home inspection. Thank you so much for your professionalism.</p>
-            </div>
-
-
-            <div class="w3-half w3-container">
-                <img src="assets/5starflat.png" style="width:30%">
-
-                <h4 class="w3-text-teal">Review by Maurizio L. in Austin, TX</h4>
-                <h4 class="w3-text-teal">Project: Inspect a Home</h4>
-                <p>Chris, was a pleasure to work with. He educated us on subjects we were not familiar with. He made us feel
-                    comfortable and at ease with our home.</p>
-
-            </div>
-
-
-            <div class="w3-half w3-container">
-                <img src="assets/5starflat.png" style="width:30%">
-
-                <h4 class="w3-text-teal">Review by Dana H.</h4>
-                <h4 class="w3-text-teal">Project: Inspect a Home</h4>
-                <p>He did home inspections for me. He showed up on time, did what he said he would and cost exactly what he
-                    said it would. Overall very smooth process.</p>
-            </div>
-
-
-            <div class="w3-half w3-container">
-                    <img src="assets/5starflat.png" style="width:30%">
-    
-                    <h4 class="w3-text-teal">Review by Cecilia in San Marcos TX</h4>
-                    <h4 class="w3-text-teal">Project: Inspected a home</h4>
-                    <p>Simply the best. He took his time and thoroughly checked every part of my house. He noticed things that you right away took his time and even took time to give a verbal overview of house. I love the fact that he only does 1 inspection a day which tells me he really takes his time and does not rush. He was the nicest person to myself and husband. Very patient and well worth it I definitely recommend this business if you want the job done damn right!!!!</p>
-                </div>
-                <div class="w3-half w3-container">
-                        <img src="assets/5starflat.png" style="width:30%">
-        
-                        <h4 class="w3-text-teal">Review by Daniel H in TX</h4>
-                        <h4 class="w3-text-teal">Project: Inspect a Home</h4>
-                        <p>professional and flexible.</p>
-                    </div>
-            <!-- <div class="w3-half w3-container">
-                    <img src="assets/5starflat.png" style="width:30%">
-    
-                    <h4 class="w3-text-teal">Review by Cecilia in San Marcos TX</h4>
-                    <h4 class="w3-text-teal">Project: Inspected a home</h4>
-                    <p>Simply the best. He took his time and thoroughly checked every part of my house. He noticed things that you right away took his time and even took time to give a verbal overview of house. I love the fact that he only does 1 inspection a day which tells me he really takes his time and does not rush. He was the nicest person to myself and husband. Very patient and well worth it I definitely recommend this business if you want the job done damn right!!!!</p>
-                </div> -->
-            </div>
-            <!-- <div class="w3-main" style="margin-left:250px">
-            <div class="w3-half w3-container">
-                    <img src="assets/5starflat.png" style="width:30%">
-    
-                    <h4 class="w3-text-teal">Review by Amy D.</h4>
-                    <h4 class="w3-text-teal">Project: Inspect a Home</h4>
-                    <p>Inspector has Quality work and Awesome.</p>
-                </div>
-       </div> -->
-    
-    </div>
    
-  
 
+ 
 
-    <!-- Pricing Section -->
-    <div class="w3-container w3-center w3-navy" style="padding:128px 16px" id="pricing">
-        <h2 class="w3-center">PRICING</h2>
-
-        <p class="w3-large">Simple, Fair, and Hassle-Free </p>
-
-        <table class="table-left">
-            <tr>
-                <th colspan="2" style="color:white !important;">New Build</th>
-
-            </tr>
-            <tr>
-                <td>
-                    < 1500 sqft</td>
-                        <td>$275</td>
-
-            </tr>
-            <tr>
-                <td>1501-2500sqft</td>
-                <td>$325</td>
-
-            </tr>
-            <tr>
-                <td>2501-3500 sqft</td>
-                <td>$375</td>
-
-            </tr>
-            <tr>
-                <td>3501-5000 sqft</td>
-                <td>$440</td>
-
-            </tr>
-            <tr>
-                <td>5001+ sqft</td>
-                <td>Call us for a quote</td>
-
-            </tr>
-        </table>
-
-        <table class="table-left">
-            <tr>
-                <th colspan="2" style="color:white !important;">Existing Build</th>
-
-            </tr>
-            <tr>
-                <td>
-                    < 1500 sqft</td>
-                        <td>$300</td>
-
-            </tr>
-            <tr>
-                <td>1501-2500sqft</td>
-                <td>$350</td>
-
-            </tr>
-            <tr>
-                <td>2501-3500 sqft</td>
-                <td>$400</td>
-
-            </tr>
-            <tr>
-                <td>3501-5000 sqft</td>
-                <td>$475</td>
-
-            </tr>
-            <tr>
-                <td>5001+ sqft</td>
-                <td>Call us for a quote</td>
-
-            </tr>
-        </table>
-      New Build* = Current Year
-        <table class="table-center">
-            <tr>
-                <th colspan="2" style="color:white !important;">Add on(s)</th>
-
-            </tr>
-            <tr>
-                <td> Wood Destroying Inspect Report (WDI)</td>
-                <td>+$100</td>
-
-            </tr>
-            <tr>
-                <td> Duplex</td>
-                <td>+$125</td>
-
-            </tr>
-            <tr>
-                <td> Fourplex</td>
-                <td>+$200</td>
-
-            </tr>
-            <tr>
-                <td> 20-29 year old home</td>
-                <td>+$100</td>
-
-            </tr>
-            <tr>
-                <td> 30+ year old home</td>
-                <td>+$200</td>
-
-            </tr>
-            <tr>
-                <td>Pier & Beam</td>
-                <td>+$100</td>
-
-            </tr>
-            <tr>
-                <td>Swimming Pool</td>
-                <td>+$50</td>
-
-            </tr>
-            <tr>
-                <td>Water Wells</td>
-                <td>+$50</td>
-
-            </tr>
-            <tr>
-                <td>Septic System</td>
-                <td>+$50</td>
-
-            </tr>
-        </table>
-
-        <p class="w3-margin-top">Contact us, to see a sample report!</p>
-        <p>
-            <a href="#contact" class="w3-button w3-white w3-padding-small w3-large  w3-opacity w3-hover-opacity-off">CONTACT US</a>
-        </p>
-    </div>
-
-    <div class="w3-container w3-white" style="padding:128px 16px;margin:auto; width: 75%;" id="area">
-        <h3 class="w3-center">SERVICE AREA(S)</h3>
-        <div style="margin-top:48px">
-
-        </div>
-        <!-- <div class="w3-center" id="map"></div> -->
-        <!-- Replace the value of the key parameter with your own API key. -->
-        <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-ttAPP76wnZgVu9r_ue917jeWYhW_I5w&callback=initMap">
-        </script> -->
-        <div style="float: left; width: 50%; list-style-type: none;">
-            <ul>
-                <li>Austin</li>
-                <li>Round Rock</li>
-                <li>New Braunfels</li>
-                <li>Georgetown</li>
-                <li>Leander</li>
-                <li>Hutto</li>
-            </ul>
-        </div>
-        <div style="float: right; width: 50%; list-style-type: none;">
-            <ul>
-                <li>Del Valle</li>
-                <li>San Marcos</li>
-                <li>Cedar Park</li>
-                <li>Georgetown</li>
-                <li>Pflugerville</li>
-                <li>Surrounding Areas</li>
-            </ul>
-        </div>
-
-
-    </div>
 
     <!-- Contact Section -->
     <!-- The Contact Section -->
 
-    <div class="bgimg-2 w3-display-container" id="home">
+    <div class="bgimg-3 w3-display-container" id="home">
       
 
     </div>
@@ -525,15 +350,15 @@ map stuff */
     <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
         <h2 class="w3-wide w3-center">CONTACT</h2>
         <p class="w3-opacity w3-center">
-            <i>Set up your appointment today!</i>
+            <i>Let us help you, contact us for additional info</i>
         </p>
         <div class="w3-row w3-padding-32">
             <div class="w3-col m6 w3-large w3-margin-bottom">
                 <i class="fa fa-map-marker" style="width:30px"></i> Austin, TX
                 <br>
-                <i class="fa fa-phone" style="width:30px"></i> (512)-273-7441
+                <i class="fa fa-phone" style="width:30px"></i> (512)-XXX-XXXX
                 <br>
-                <i class="fa fa-envelope" style="width:30px"> </i> ckhansen928@gmail.com
+                <i class="fa fa-envelope" style="width:30px"> </i> holly.dekle@setboundaries.com
                 <br>
             </div>
             <div class="w3-col m6">
@@ -565,19 +390,19 @@ map stuff */
 
 
     <!-- Footer -->
-    <footer class="w3-aqua w3-padding-24">
+    <footer class="w3-black w3-padding-24" style="background-color: black;
+    color: white;">
             <div class="w3-center">
         <a href="#home" class="w3-button">
             <i class="fa fa-arrow-up w3-margin-right"></i>
         </a>
-        <div>Professional Inspector</div>
-        <div><a href="https://www.trec.texas.gov/apps/license-holder-search/?detail_id=1000139157" target="_blank">TREC License #: 23601</a></div>
-        <div><a href="  https://www.trec.texas.gov/forms/consumer-protection-notice" target="_blank">  https://www.trec.texas.gov</a></div>
-        <div><a href="https://www.hanseninspections.com/#contact" target="_blank">TDA Commercial Technician License #: 0834789</a></div>
+        <!-- <div>Professional Inspector</div>
+        <div><a href="https://www.trec.texas.gov/apps/license-holder-search/?detail_id=1000139157" target="_blank">TREC License #: 23601</a></div> -->
+
   
 
 
-<div>© Hansen Home Inspections, PLLC </div>
+<div>© Set Boundaries, LLC </div>
 <div>Powered by <a href="https://www.cafeconmau.com" target="_blank">Cafe Con Mau Designs</a></div>
 </div>
 
