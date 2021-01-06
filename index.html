@@ -108,7 +108,7 @@
 
     th {
         color: #000 !important;
-        background-color: #CA8D4B !important
+        background-color: #2CA1C7 !important
     }
 
     /* 
@@ -144,7 +144,7 @@ map stuff */
                 <a href="#service" class="w3-bar-item w3-button">SERVICES</a>
                 <!-- <a href="#industries" class="w3-bar-item w3-button"> INDUSTRIES</a> -->
                
-                <a href="#client" class="w3-bar-item w3-button"> CLIENTS</a>
+                <a href="#pricing" class="w3-bar-item w3-button"> RATES</a>
                 <a href="#contact" class="w3-bar-item w3-button"> CONTACT</a>
             </div>
             <!-- Hide right-floated links on small screens and replace them with a menu icon -->
@@ -163,15 +163,15 @@ map stuff */
         <a href="#service" onclick="w3_close()" class="w3-bar-item w3-button">SERVICES</a>
         <!-- <a href="#review" onclick="w3_close()" class="w3-bar-item w3-button">REVIEWS</a> -->
      
-        <a href="#client" onclick="w3_close()" class="w3-bar-item w3-button">CLIENTS</a>
+        <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">RATES</a>
         <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
     </nav>
 
     <!-- Header with full-height image -->
-    <header class="bgimg-1 w3-display-container" id="home">
+    <header class="bgimg-1 w3-display-container" id="home" href="#contact">
         <div style="padding-top: 400px;">
-            <br>
-            <br>
+         
+       
           
             <!-- <span class="w3-jumbo w3-hide-small w3-text-white" style="padding-top:20px;">Hansen Home Inspections</span>
             <br>
@@ -183,11 +183,13 @@ map stuff */
             <p> -->
 
                  <!-- Let us help you get there button -->
+                <!-- <br>-->
                 <!-- <br>
                 <br>
+                <br>
                 <div class=w3-center>
-                <a href="#contact" class="w3-button w3-sb-blue w3-center w3-medium">Let us help you, get there</a>
-                </div> -->
+                <a href="#contact" class="w3-button w3-sb-blue w3-center w3-medium">Let us help you, get there</a> -->
+                </div> 
                
             </p>
         </div>
@@ -368,10 +370,62 @@ map stuff */
         </div>
     </div>
 
-   
+    <!-- Pricing Cost Section -->   
 
- 
+    <div class="w3-container w3-center" style="padding:128px 16px; background-color: #616161; color: white;" id="pricing">
+        <h2 class="w3-center">RATES</h2>
 
+        <p class="w3-large">Simple, Fair, and Hassle-Free </p>
+        <p class="w3-center w3-large">Hourly rate = $125* </p>
+
+    <table class="table-center">
+        <tr>
+            <th colspan="2" style="color:white !important;">Pricing Breakdown</th>
+
+        </tr>
+        <tr>
+            <th colspan="1" style="color:white !important;">Total Project Cost</th>
+            <th colspan="2" style="color:white !important;">Rate</th>
+        </tr>
+        <!-- <tr>
+            <td> Charitable Organizations  </td>
+            <td> Project Management is our passion, please contact us directly.</td>
+
+        </tr> -->
+        <tr>
+            <td> $50k-$250k   </td>
+            <td>5%</td>
+
+        </tr>
+        <tr>
+            <td> >$250k-$1M     </td>
+            <td>4%</td>
+
+        </tr>
+        <tr>
+            <td> $1M-$10M   </td>
+            <td>3%</td>
+
+        </tr>
+        <tr>
+            <td> >$10M-$20M   </td>
+            <td>2%</td>
+
+        </tr>
+        <tr>
+            <td>>$20M     </td>
+            <td>1%</td>
+
+        </tr>
+        <tr>
+            <td>Hourly Rate</td>
+            <td>$125</td>
+
+    </table>
+
+    <p class="w3-center" style= "font-style: italic;">For non-profits or charitable organizations: Project Management is our passion, please contact us directly* </p>
+
+</div>
 
     <!-- Contact Section -->
     <!-- The Contact Section -->
@@ -416,7 +470,7 @@ map stuff */
                     </div>
                     <input class="w3-input w3-border"   type="text" placeholder="Address" required name="message">
                     <input class="w3-input w3-border" style="margin-top:10px;" type="text" placeholder="Your Message" required name="message">
-                    <button class="w3-button w3-navy w3-section w3-right" type="submit">SEND</button>
+                    <button class="w3-button w3-section w3-right" type="submit" style="background-color: #616161; color: white;">SEND</button>
                 </form>
             </div>
         </div>
