@@ -122,6 +122,31 @@ map stuff */
         width: 100%;
         /* The width is the width of the web page */
     }
+
+    .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  grid-auto-rows: 1fr;
+}
+
+.grid::before {
+  content: '';
+  width: 0;
+  padding-bottom: 100%;
+  grid-row: 1 / 1;
+  grid-column: 1 / 1;
+}
+
+.grid > *:first-child {
+  grid-row: 1 / 1;
+  grid-column: 1 / 1;
+}
+
+/* Just to make the grid visible */
+
+/* .grid > * {
+ 
+} */
 </style>
 
 <body>
@@ -284,16 +309,71 @@ map stuff */
 </div>
 
     <!-- Main Service Section  -->
-    <div class="w3-container w3-light-grey" style="padding:128px 16px" id="service">
+    <div class="w3-container" style="padding:128px 16px; color: white;
+    background-color: #141414;" id="service">
             <h2 class="w3-center ">SERVICES</h2>
             <p class="w3-large w3-center">Program management consulting services offered</p>
         <div class="w3-row-padding w3-center" style="margin-top:32px">
+            <!-- <div class="grid">
+                <div> <i class="fa fa-heartbeat		
+                    w3-margin-bottom w3-jumbo w3-center"></i>
+                    <p class="w3-large">Project Risk Assessment</p>
+                   
+                    <p>Maximize positive results and minimize negative outcomes. Our guidance can assist you on better predicting residual risks and the ripple effect of a project decision.
+                    </p></div>
+                <div> <i class="fa fa-hourglass-1	
+                    w3-margin-bottom w3-jumbo"></i>
+                    <p class="w3-large">Project Planning and Launch</p>
+                    
+                   
+                    <p>Outline a game plan that will address the monitoring, tracking and controlling of the project once it gets under way.</p></div>
+                <div>  <i class="fa fa-play	
+                    w3-margin-bottom w3-jumbo"></i>
+                    <p class="w3-large">Project Execution</p>
+                    <p>Allow us to oversee the performance of your project scope and acitivites in accordance with the project schedule, design, procedues, resources and safety regulations. </p></div>
+                
+                <div><i class="fa fa-binoculars	
+                    w3-margin-bottom w3-jumbo"></i>
+                    <p class="w3-large">Project Monitoring and Control</p>
+                    <p>Ensure project work is carried out according to the plan and provide guidance on any items necessary to ensure the project goes according to plan.</p></div>
+                <div> <i class="fa fa-bullhorn	
+                    w3-margin-bottom w3-jumbo w3-center"></i>
+                    <p class="w3-large">Change Management</p>
+    
+                    <p>Identify ways to strategically plan for change, functions of critical roles that should be incorporated into plans to quickly adapt and increase likelihood of success.
+                    </p></div>
+                <div>  <i class="fa fa-check	
+                    w3-margin-bottom w3-jumbo"></i>
+                    <p class="w3-large">Project Closure
+                    </p>
+                    <p>Assurance that all deliverables were accomplished in accordance to scope of the project and in the appropriate timely manner.</p></div>
+                <div> <i class="fa fa-handshake-o	
+                    w3-margin-bottom w3-jumbo"></i>
+                    <p class="w3-large">Team Building/ Mentoring
+                    </p>
+                    <p>Work with individual contributors to build a strong foundation for effective interpersonal communication. Facilitate the behavioral and communication dynamics essential to a team's collaboration.</p></div>
+                <div><i class="fa fa-pause	
+                    w3-margin-bottom w3-jumbo"></i>
+                    <p class="w3-large">Mid-Project Audit</p>
+                    <p>Evaluate existing project plans and project progress reports to identify problem areas and to determine appropriate strategies to refocus, remove roadblocks, and motivate the team with a clear sense of direction.</p></div>
+                <div class="w3-center"><i class="fa fa-close	
+                    w3-margin-bottom w3-jumbo"></i>
+                    <p class="w3-large">Problem Intervention
+                    </p>
+                    <p>Analyze a current problem situation to determine its cause and related impact to devise appropriate corrective actions.
+                    </p>  </div>
+                <div class="w3-center">  <i class="fa fa-thumbs-o-up w3-margin-bottom w3-jumbo"></i>
+                    <p class="w3-large">Post-Project Evaluation
+                    </p>
+                    <p>Review and evaluate close out of the project so that lessons learned can be identified as a growth experience for the future</p></div>
+              
+              </div> -->
             <div class="w3-quarter">
                 <i class="fa fa-heartbeat		
                 w3-margin-bottom w3-jumbo w3-center"></i>
                 <p class="w3-large">Project Risk Assessment</p>
                
-                <p>Maximize the probability and consequences of positive events to project outcomes and minimize the probability and consequences of negative events to project outcomes. Guidance on better predicting residual risks and the ripple effect of a project decision.
+                <p>Maximize positive results and minimize negative outcomes. Our guidance can assist you on better predicting residual risks and the ripple effect of a project decision.
                 </p>
             </div>
             <div class="w3-quarter">
@@ -308,7 +388,7 @@ map stuff */
                 <i class="fa fa-play	
                 w3-margin-bottom w3-jumbo"></i>
                 <p class="w3-large">Project Execution</p>
-                <p>performing the project scope of works and activities in accordance with the project baselines, plans and procedures with the resource, interface, change, schedule, cost, risk, quality, safety and environment management, contractual requirements, and regulation.</p>
+                <p>Allow us to oversee the performance of your project scope and acitivites in accordance with the project schedule, design, procedues, resources and safety regulations. </p>
             </div>
             <div class="w3-quarter">
                 <i class="fa fa-binoculars	
@@ -324,7 +404,7 @@ map stuff */
                 w3-margin-bottom w3-jumbo w3-center"></i>
                 <p class="w3-large">Change Management</p>
 
-                <p>Identify ways to strategically plan for change, functions of critical roles that should be incorporated into plans, recognize how culture can affect change, and plan activities to increase the likelihood of success.
+                <p>Identify ways to strategically plan for change, functions of critical roles that should be incorporated into plans to quickly adapt and increase likelihood of success.
                 </p>
             </div>
             <div class="w3-quarter">
@@ -332,7 +412,7 @@ map stuff */
                 w3-margin-bottom w3-jumbo"></i>
                 <p class="w3-large">Project Closure
                 </p>
-                <p>The never-ending project - Assurance that all the work has been completed, that all agreed upon project management processes have been executed, and formal recognition of the completion of a project—everyone agrees that it is completed.</p>
+                <p>Assurance that all deliverables were accomplished in accordance to scope of the project and in the appropriate timely manner.</p>
             </div>
             <div class="w3-quarter">
                 <i class="fa fa-handshake-o	
@@ -345,7 +425,7 @@ map stuff */
                 <i class="fa fa-pause	
                 w3-margin-bottom w3-jumbo"></i>
                 <p class="w3-large">Mid-Project Audit</p>
-                <p>Evaluate existing project plans and project progress reports to identify problem areas and to determine appropriate strategies to refocus, remove roadblocks, and motivate the team with a clear sense of direction..</p>
+                <p>Evaluate existing project plans and project progress reports to identify problem areas and to determine appropriate strategies to refocus, remove roadblocks, and motivate the team with a clear sense of direction.</p>
             </div>
         </div>
 
@@ -357,14 +437,14 @@ map stuff */
                 w3-margin-bottom w3-jumbo"></i>
                 <p class="w3-large">Problem Intervention
                 </p>
-                <p>The project is in trouble - Analyze a current problem situation to determine its cause and related impact to devise appropriate corrective actions.
+                <p>Analyze a current problem situation to determine its cause and related impact to devise appropriate corrective actions.
                 </p>
             </div>
             <div class="w3-half">
                 <i class="fa fa-thumbs-o-up w3-margin-bottom w3-jumbo"></i>
                 <p class="w3-large">Post-Project Evaluation
                 </p>
-                <p>Benefit from your teams experience - Review and evaluate a recently completed project so that lessons learned can be identified as a growth experience for the project team and documented for use by future teams.</p>
+                <p>Review and evaluate close out of the project so that lessons learned can be identified as a growth experience for the future</p>
             </div>
           
         </div>
@@ -372,7 +452,7 @@ map stuff */
 
     <!-- Pricing Cost Section -->   
 
-    <div class="w3-container w3-center" style="padding:128px 16px; background-color: #616161; color: white;" id="pricing">
+    <div class="w3-container w3-center w3-light-grey" style="padding:128px 16px; background-color: #616161; color: white;" id="pricing">
         <h2 class="w3-center">RATES</h2>
 
         <p class="w3-large">Simple, Fair, and Hassle-Free </p>
