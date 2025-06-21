@@ -147,6 +147,76 @@ map stuff */
 /* .grid > * {
  
 } */
+/* Video css*/
+.video-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  .video-wrap video,
+  iframe,
+  video {
+    min-width: 100%;
+    min-height: 100%;
+  }
+  .video-fit {
+    height: 60rem;
+  }
+  /* @media (max-width:601px) {
+    .video-fit {
+        height:20rem;
+    } */
+  @media (max-width:699px) and (min-width: 320px) {
+    .video-fit {
+      height: 25rem;
+    }
+  }
+  @media (max-width:1200px) and (min-width: 700px) {
+    .video-fit {
+      height: 35rem;
+    }
+  }
+  @media (max-width:1350px) and (min-width: 1201px) {
+    .video-fit {
+      height: 55rem;
+    }
+    @media (max-width:1650px) and (min-width: 1351px) {
+      .video-fit {
+        height: 65rem;
+      }
+    }
+  }
+  .Mau-hide-header {
+    -moz-animation: cssAnimation 0s ease-in 5s forwards;
+    /* Firefox */
+    -webkit-animation: cssAnimation 0s ease-in 5s forwards;
+    /* Safari and Chrome */
+    -o-animation: cssAnimation 0s ease-in 5s forwards;
+    /* Opera */
+    animation: cssAnimation 0s ease-in 5s forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  }
+  @keyframes cssAnimation {
+    to {
+      width: 0;
+      height: 0;
+      overflow: hidden;
+    }
+  }
+  @-webkit-keyframes cssAnimation {
+    to {
+      width: 0;
+      height: 0;
+      visibility: hidden;
+    }
+  }
+
+
+
 </style>
 
 <body>
@@ -193,41 +263,44 @@ map stuff */
         <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
     </nav>
 
+
+    <header class="video-fit w3-display-container w3-black" id="home">
+            <section>
+              <div class="video-wrap">
+                <iframe id="otherVideo" src="https://player.vimeo.com/video/51601173?background=1&autoplay=1&loop=1&muted=1&autopause=0&title=0&byline=0&portrait=0&transparent=0"
+                  allow="autoplay" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                <!-- <video id="otherVideo" src="./assets/Blending_Traditional.mp4" playsinline autoplay muted loop></video> -->
+              </div>
+              <div class="overlay"></div>
+            </section>
+            <!-- <div class="Mau-hide-header Mau-display-left Mau-text-white">
+             
+              <span style="padding:48px" class="Mau-xxlarge Mau-hide-header">The year in Recap:</span>
+              <br>
+              <span style="padding:48px" class="Mau-xxlarge Mau-hide-header">2019</span>
+            </div> -->
+            
+          </header>
+
+
+
     <!-- Header with full-height image -->
-    <header class="bgimg-1 w3-display-container" id="home" href="#contact">
+       <!-- <header class="bgimg-1 w3-display-container" id="home" href="#contact">
         <div style="padding-top: 400px;">
          
-       
-          
-            <!-- <span class="w3-jumbo w3-hide-small w3-text-white" style="padding-top:20px;">Hansen Home Inspections</span>
-            <br>
-            <span class="w3-xxlarge w3-hide-large w3-hide-medium  w3-text-white">Hansen Home Inspections</span>
-            <br> -->
-
-            <!-- take this out -->
-            <!-- <span class="w3-xlarge w3-text-white">Excellence in every aspect of our business.</span>
-            <p> -->
-
-                 <!-- Let us help you get there button -->
-                <!-- <br>-->
-                <!-- <br>
-                <br>
-                <br>
-                <div class=w3-center>
-                <a href="#contact" class="w3-button w3-sb-blue w3-center w3-medium">Let us help you, get there</a> -->
                 </div> 
                
             </p>
         </div>
 
-    </header>
+    </header> -->
 
     <!-- About Section -->
     <div class="w3-container" style="padding:128px 16px" id="about">
         <h2 class="w3-center">ABOUT US</h2>
         <div class="w3-center">
         
-                     <img style="width:45%; height:45%;" src="assets/Extendedmodel.png">
+                     <img style="width:45%; height:45%;" src="assets/newlogo.png">
        
             <!-- <img class="circle-image" style="
             border-radius: 50%;
@@ -299,11 +372,12 @@ list-style-type: none;>
 
 </p> -->
 
-<br>
-<br>
+
     <br>
-    <img class="w3-image w3-round-large"
-    " src="assets/moreaboutus.PNG">
+    <!-- <img class="w3-image w3-round-large"
+    " src="assets/maritime.jpg"> -->
+
+   
 </div>
 <br>
 <br>
@@ -370,7 +444,13 @@ list-style-type: none;>
     <div class="w3-container" style="padding:128px 16px; color: white;
     background-color: #141414;" id="service">
             <h2 class="w3-center ">SERVICES</h2>
-            <p class="w3-large w3-center">Program Management consulting services offered:</p>
+            <p class="w3-center w3-xlarge w3-bold"><i> 
+
+            <p class="w3-xlarge w3-center w3-bold"><i>Program Management & Project Engineering Services </i> 
+                <p>
+                    Built for Aerospace & Maritime Mission Success
+                    We deliver structured, fast-acting project leadership across the entire lifecycle—whether you're launching, rescuing, or closing a program. Our services are tailored for complex, high-stakes environments where time, compliance, and performance matter.
+                    </p>
         <div class="w3-row-padding w3-center" style="margin-top:32px">
             <!-- <div class="grid">
                 <div> <i class="fa fa-heartbeat		
@@ -384,49 +464,65 @@ We create clear, executable roadmaps that bring together strategy, operations, a
                     </p></div>
                 <div> <i class="fa fa-hourglass-1	
                     w3-margin-bottom w3-jumbo"></i>
-                    <p class="w3-large">Project Planning and Launch</p>
+                    <p class="w3-large">Microsoft Project Scheduling (DCMA 14-Point Compliant)
+                        </p>
                     
                    
-                    <p>Outline a game plan that will address the monitoring, tracking and controlling of the project once it gets under way.</p></div>
+                    <p>Build trustworthy, audit-ready schedules.
+                            Real time creation of MS Project schedules that pass the DCMA 14-point check—supporting EVM, critical path, and government reporting standards.
+                            </p></div>
                 <div>  <i class="fa fa-play	
                     w3-margin-bottom w3-jumbo"></i>
-                    <p class="w3-large">Project Execution</p>
-                    <p>Allow us to oversee the performance of your project scope and acitivites in accordance with the project schedule, design, procedures, resources and safety regulations. </p></div>
+                    <p class="w3-large">Program Recovery</p>
+                    <p>Fix troubled programs—fast.
+                            We diagnose root issues, stabilize operations, and restore your customer’s confidence in record time.
+                             </p></div>
                 
                 <div><i class="fa fa-binoculars	
                     w3-margin-bottom w3-jumbo"></i>
-                    <p class="w3-large">Project Monitoring and Control</p>
-                    <p>Ensure project work is carried out according to the plan and provide guidance on any items necessary to ensure the project goes according to plan.</p></div>
+                    <p class="w3-large">Earned Value Management (EVM) & Project Controls</p>
+                    <p>Track cost and schedule with precision.
+                            From performance baselines to SPI/CPI tracking, we provide real-time visibility and control over your project’s financial and schedule health</p></div>
                 <div> <i class="fa fa-bullhorn	
                     w3-margin-bottom w3-jumbo w3-center"></i>
-                    <p class="w3-large">Change Management</p>
+                    <p class="w3-large">Risk & Opportunity Management</p>
     
-                    <p>Identify ways to strategically plan for change, functions of critical roles that should be incorporated into plans to quickly adapt and increase likelihood of success.
+                    <p>Mitigate risk before it impacts delivery.
+                            We identify, assess, and manage technical and programmatic risks, keeping your project secure and adaptive.                            
                     </p></div>
                 <div>  <i class="fa fa-check	
                     w3-margin-bottom w3-jumbo"></i>
-                    <p class="w3-large">Project Closure
+                    <p class="w3-large">Scope Control & Technical Baseline Management
                     </p>
                     <p>Assurance that all deliverables were accomplished in accordance to scope of the project and in the appropriate timely manner.</p></div>
                 <div> <i class="fa fa-handshake-o	
                     w3-margin-bottom w3-jumbo"></i>
-                    <p class="w3-large">Team Building/ Mentoring
+                    <p class="w3-large">Stakeholder & Communication Management
                     </p>
-                    <p>Work with individual contributors to build a strong foundation for effective interpersonal communication. Facilitate the behavioral and communication dynamics essential to a team's collaboration.</p></div>
+                    <p>Clarity across all levels.
+                            From internal teams to government agencies, we create clear reporting structures and engagement plans that reduce rework and decision lags.
+                            
+                            </p></div>
                 <div><i class="fa fa-pause	
                     w3-margin-bottom w3-jumbo"></i>
-                    <p class="w3-large">Mid-Project Audit</p>
-                    <p>Evaluate existing project plans and project progress reports to identify problem areas and to determine appropriate strategies to refocus, remove roadblocks, and motivate the team with a clear sense of direction.</p></div>
+                    <p class="w3-large">Independent Program Assessments</p>
+                    <p>See the real status—before it's too late.
+                            We provide third-party reviews of program performance and contract alignment to help you course-correct or validate delivery confidence.
+                            </p></div>
                 <div class="w3-center"><i class="fa fa-close	
                     w3-margin-bottom w3-jumbo"></i>
-                    <p class="w3-large">Problem Intervention
+                    <p class="w3-large">Project Closeout & Compliance
                     </p>
-                    <p>Analyze a current problem situation to determine its cause and related impact to devise appropriate corrective actions.
+                    <p>Wrap up cleanly and completely.
+                            We close out stagnant or delayed programs efficiently—securing deliverables, clearing audits, and freeing up resources.
+                            
                     </p>  </div>
                 <div class="w3-center">  <i class="fa fa-thumbs-o-up w3-margin-bottom w3-jumbo"></i>
-                    <p class="w3-large">Post-Project Evaluation
+                    <p class="w3-large">Agile Project Management for Engineering Teams
                     </p>
-                    <p>Review and evaluate close out of the project so that lessons learned can be identified as a growth experience for the future</p></div>
+                    <p>Speed + structure.
+                            We blend Agile principles with traditional controls for R&D and systems teams needing flexibility without losing traceability.
+                            </p></div>
               
               </div> -->
             <div class="w3-quarter">
@@ -442,22 +538,28 @@ We create clear, executable roadmaps that bring together strategy, operations, a
             <div class="w3-quarter">
                 <i class="fa fa-hourglass-1	
                 w3-margin-bottom w3-jumbo"></i>
-                <p class="w3-large">Project Planning and Launch</p>
+                <p class="w3-large">Microsoft Project Scheduling (DCMA 14-Point Compliant)/p>
                 
                
-                <p>Outline a game plan that will address the monitoring, tracking and controlling of the project once it gets under way.</p>
+                <p>Build trustworthy, audit-ready schedules.
+                        Real time creation of MS Project schedules that pass the DCMA 14-point check—supporting EVM, critical path, and government reporting standards.
+                        </p>
             </div>
             <div class="w3-quarter">
                 <i class="fa fa-play	
                 w3-margin-bottom w3-jumbo"></i>
-                <p class="w3-large">Project Execution</p>
-                <p>Allow us to oversee the performance of your project scope and acitivites in accordance with the project schedule, design, procedures, resources and safety regulations. </p>
+                <p class="w3-large">Program Recovery
+                    </p>
+                <p>Fix troubled programs—fast.
+                        We diagnose root issues, stabilize operations, and restore your customer’s confidence in record time.
+                        </p>
             </div>
             <div class="w3-quarter">
                 <i class="fa fa-binoculars	
                 w3-margin-bottom w3-jumbo"></i>
-                <p class="w3-large">Project Monitoring and Control</p>
-                <p>Ensure project work is carried out according to the plan and provide guidance on any items necessary to ensure the project goes according to plan.</p>
+                <p class="w3-large">Earned Value Management (EVM) & Project Controls</p>
+                <p>Track cost and schedule with precision.
+                        From performance baselines to SPI/CPI tracking, we provide real-time visibility and control over your project’s financial and schedule health.</p>
             </div>
         </div>
 
@@ -465,30 +567,39 @@ We create clear, executable roadmaps that bring together strategy, operations, a
             <div class="w3-quarter">
                 <i class="fa fa-bullhorn	
                 w3-margin-bottom w3-jumbo w3-center"></i>
-                <p class="w3-large">Change Management</p>
+                <p class="w3-large">Risk & Opportunity Management</p>
 
-                <p>Identify ways to strategically plan for change, functions of critical roles that should be incorporated into plans to quickly adapt and increase likelihood of success.
+                <p>Mitigate risk before it impacts delivery.
+                        We identify, assess, and manage technical and programmatic risks, keeping your project secure and adaptive.
+                        
                 </p>
             </div>
             <div class="w3-quarter">
                 <i class="fa fa-check	
                 w3-margin-bottom w3-jumbo"></i>
-                <p class="w3-large">Project Closure
+                <p class="w3-large">Scope Control & Technical Baseline Management
                 </p>
-                <p>Assurance that all deliverables were accomplished in accordance to scope of the project and in the appropriate timely manner.</p>
+                <p>Keep engineering on track.
+                        We lock in scope, manage changes, and protect the technical baseline from drift—aligned with AS9100 and ISO standards.
+                        </p>
             </div>
             <div class="w3-quarter">
                 <i class="fa fa-handshake-o	
                 w3-margin-bottom w3-jumbo"></i>
-                <p class="w3-large">Team Building/ Mentoring
+                <p class="w3-large">Stakeholder & Communication Management
+                        
                 </p>
-                <p>Work with individual contributors to build a strong foundation for effective interpersonal communication. Facilitate the behavioral and communication dynamics essential to a team's collaboration.</p>
+                <p>Clarity across all levels.
+                        From internal teams to government agencies, we create clear reporting structures and engagement plans that reduce rework and decision lags.
+                        </p>
             </div>
             <div class="w3-quarter">
                 <i class="fa fa-pause	
                 w3-margin-bottom w3-jumbo"></i>
-                <p class="w3-large">Mid-Project Audit</p>
-                <p>Evaluate existing project plans and project progress reports to identify problem areas and to determine appropriate strategies to refocus, remove roadblocks, and motivate the team with a clear sense of direction.</p>
+                <p class="w3-large">Independent Program Assessments</p>
+                <p>See the real status—before it's too late.
+                        We provide third-party reviews of program performance and contract alignment to help you course-correct or validate delivery confidence.
+                        </p>
             </div>
         </div>
 
@@ -498,16 +609,19 @@ We create clear, executable roadmaps that bring together strategy, operations, a
             <div class="w3-half">
                 <i class="fa fa-close	
                 w3-margin-bottom w3-jumbo"></i>
-                <p class="w3-large">Problem Intervention
+                <p class="w3-large">Project Closeout & Compliance
                 </p>
-                <p>Analyze a current problem situation to determine its cause and related impact to devise appropriate corrective actions.
+                <p>Wrap up cleanly and completely.
+                        We close out stagnant or delayed programs efficiently—securing deliverables, clearing audits, and freeing up resources.
                 </p>
             </div>
             <div class="w3-half">
                 <i class="fa fa-thumbs-o-up w3-margin-bottom w3-jumbo"></i>
-                <p class="w3-large">Post-Project Evaluation
+                <p class="w3-large">Agile Project Management for Engineering Teams
                 </p>
-                <p>Review and evaluate close out of the project so that lessons learned can be identified as a growth experience for the future.</p>
+                <p>Speed + structure.
+                        We blend Agile principles with traditional controls for R&D and systems teams needing flexibility without losing traceability.
+                        </p>
             </div>
           
         </div>
